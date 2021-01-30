@@ -36,6 +36,9 @@ public class CFourmi {
 
   /*************************************************************************************************
   */
+  public CFourmi() {
+	  
+  }
   public CFourmi(Color pCouleurDeposee, Color pCouleurSuivie, float pProbaTD, float pProbaG, float pProbaD,
       float pProbaSuivre, CPainting pPainting, char pTypeDeplacement, float pInit_x, float pInit_y, int pInitDirection,
       int pTaille, float pSeuilLuminance, PaintingAnts pApplis) {
@@ -112,7 +115,9 @@ public class CFourmi {
     if (mApplis.mBaseImage != null) {
       lCouleur = new Color(mApplis.mBaseImage.getRGB(i, j));
     } else {
-      lCouleur = new Color(mPainting.getCouleur(i, j).getRGB());
+
+      lCouleur = new Color(mPainting.getCouleur(i, j));
+
     }
     if (testCouleur(lCouleur)) {
       dir[0] = 1;
@@ -123,7 +128,9 @@ public class CFourmi {
     if (mApplis.mBaseImage != null) {
       lCouleur = new Color(mApplis.mBaseImage.getRGB(i, j));
     } else {
-      lCouleur = new Color(mPainting.getCouleur(i, j).getRGB());
+
+      lCouleur = new Color(mPainting.getCouleur(i, j));
+
     }
     if (testCouleur(lCouleur)) {
       dir[1] = 1;
@@ -133,7 +140,9 @@ public class CFourmi {
     if (mApplis.mBaseImage != null) {
       lCouleur = new Color(mApplis.mBaseImage.getRGB(i, j));
     } else {
-      lCouleur = new Color(mPainting.getCouleur(i, j).getRGB());
+
+    	lCouleur = new Color(mPainting.getCouleur(i, j));
+
     }
     if (testCouleur(lCouleur)) {
       dir[2] = 1;
@@ -178,8 +187,15 @@ public class CFourmi {
     x = modulo(x, mPainting.getLargeur());
     y = modulo(y, mPainting.getHauteur());
 
+    float R = mCouleurDeposee.getRed(); 
+    float G = mCouleurDeposee.getGreen(); 
+    float B = mCouleurDeposee.getBlue(); 
+    int iCouleurDeposee = ((int)R<<16) + ((int)G<<8) + (int)B;
+
     // coloration de la nouvelle position de la fourmi
-    mPainting.setCouleur(x, y, mCouleurDeposee, mTaille);
+    /******************************/
+    mPainting.setCouleur(x, y, iCouleurDeposee, mTaille);
+    /******************************/
 
     mApplis.IncrementFpsCounter();
   }

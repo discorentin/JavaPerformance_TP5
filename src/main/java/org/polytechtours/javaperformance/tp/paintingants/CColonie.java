@@ -16,6 +16,11 @@ public class CColonie implements Runnable {
   private Boolean mContinue = Boolean.TRUE;
   private Vector<CFourmi> mColonie;
   private PaintingAnts mApplis;
+  
+  public CColonie() {
+	  mColonie = new Vector<CFourmi>();
+	  mApplis = new PaintingAnts();
+  }
 
   /** Creates a new instance of CColonie */
   public CColonie(Vector<CFourmi> pColonie, PaintingAnts pApplis) {
@@ -31,17 +36,23 @@ public class CColonie implements Runnable {
   public void run() {
 
     while (mContinue == true) {
-      if (!mApplis.getPause()) {
-        for (int i = 0; i < mColonie.size(); i++) {
-          mColonie.get(i).deplacer();
-          mApplis.compteur();
-        }
-      } else {
-        /*
-         * try { Thread.sleep(100); } catch (InterruptedException e) { break; }
-         */
+    
+//    	for(int j=0;j<1000;j++) {
+    		if (!mApplis.getPause()) {
+    			for (int i = 0; i < mColonie.size(); i++) {
+    				mColonie.get(i).deplacer();
+    				mApplis.compteur();
+    			}
+    		} else {
+            /*
+             * try { Thread.sleep(100); } catch (InterruptedException e) { break; }
+             */
 
-      }
+          }
+    		
+//    }
+    	break;
+      
     }
   }
 
