@@ -1,0 +1,256 @@
+# JMH version: 1.26
+# VM version: JDK 14.0.1, Java HotSpot(TM) 64-Bit Server VM, 14.0.1+7
+# VM invoker: C:\Program Files\Java\jdk-14.0.1\bin\java.exe
+# VM options: -javaagent:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\lib\idea_rt.jar=57727:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.init
+
+# Run progress: 0,00% complete, ETA 00:14:00
+# Fork: 1 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$AppClassLoader cannot be cast to class java.net.URLClassLoader (jdk.internal.loader.ClassLoaders$AppClassLoader and java.net.URLClassLoader are in module java.base of loader 'bootstrap')
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.init(PaintingAnts.java:123)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_init_jmhTest.init_thrpt_jmhStub(PaintingAnts_init_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_init_jmhTest.init_Throughput(PaintingAnts_init_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+# Run progress: 7,14% complete, ETA 00:00:09
+# Fork: 2 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.ClassCastException: class jdk.internal.loader.ClassLoaders$AppClassLoader cannot be cast to class java.net.URLClassLoader (jdk.internal.loader.ClassLoaders$AppClassLoader and java.net.URLClassLoader are in module java.base of loader 'bootstrap')
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.init(PaintingAnts.java:123)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_init_jmhTest.init_thrpt_jmhStub(PaintingAnts_init_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_init_jmhTest.init_Throughput(PaintingAnts_init_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+
+# JMH version: 1.26
+# VM version: JDK 14.0.1, Java HotSpot(TM) 64-Bit Server VM, 14.0.1+7
+# VM invoker: C:\Program Files\Java\jdk-14.0.1\bin\java.exe
+# VM options: -javaagent:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\lib\idea_rt.jar=57727:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.run
+
+# Run progress: 14,29% complete, ETA 00:00:08
+# Fork: 1 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at org.polytechtours.javaperformance.tp.paintingants.CPainting.init(CPainting.java:135)
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.run(PaintingAnts.java:468)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_run_jmhTest.run_thrpt_jmhStub(PaintingAnts_run_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_run_jmhTest.run_Throughput(PaintingAnts_run_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+# Run progress: 21,43% complete, ETA 00:00:08
+# Fork: 2 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at org.polytechtours.javaperformance.tp.paintingants.CPainting.init(CPainting.java:135)
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.run(PaintingAnts.java:468)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_run_jmhTest.run_thrpt_jmhStub(PaintingAnts_run_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_run_jmhTest.run_Throughput(PaintingAnts_run_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+
+# JMH version: 1.26
+# VM version: JDK 14.0.1, Java HotSpot(TM) 64-Bit Server VM, 14.0.1+7
+# VM invoker: C:\Program Files\Java\jdk-14.0.1\bin\java.exe
+# VM options: -javaagent:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\lib\idea_rt.jar=57727:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.start
+
+# Run progress: 28,57% complete, ETA 00:00:07
+# Fork: 1 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at java.desktop/java.applet.Applet.getAppletContext(Applet.java:216)
+	at java.desktop/java.applet.Applet.showStatus(Applet.java:269)
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.start(PaintingAnts.java:527)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_start_jmhTest.start_thrpt_jmhStub(PaintingAnts_start_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_start_jmhTest.start_Throughput(PaintingAnts_start_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+# Run progress: 35,71% complete, ETA 00:00:06
+# Fork: 2 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at java.desktop/java.applet.Applet.getAppletContext(Applet.java:216)
+	at java.desktop/java.applet.Applet.showStatus(Applet.java:269)
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.start(PaintingAnts.java:527)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_start_jmhTest.start_thrpt_jmhStub(PaintingAnts_start_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_start_jmhTest.start_Throughput(PaintingAnts_start_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+
+# JMH version: 1.26
+# VM version: JDK 14.0.1, Java HotSpot(TM) 64-Bit Server VM, 14.0.1+7
+# VM invoker: C:\Program Files\Java\jdk-14.0.1\bin\java.exe
+# VM options: -javaagent:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\lib\idea_rt.jar=57727:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.stop
+
+# Run progress: 42,86% complete, ETA 00:00:05
+# Fork: 1 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at java.desktop/java.applet.Applet.getAppletContext(Applet.java:216)
+	at java.desktop/java.applet.Applet.showStatus(Applet.java:269)
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.stop(PaintingAnts.java:543)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_stop_jmhTest.stop_thrpt_jmhStub(PaintingAnts_stop_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_stop_jmhTest.stop_Throughput(PaintingAnts_stop_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+# Run progress: 50,00% complete, ETA 00:00:04
+# Fork: 2 of 2
+# Warmup Iteration   1: <failure>
+
+java.lang.NullPointerException
+	at java.desktop/java.applet.Applet.getAppletContext(Applet.java:216)
+	at java.desktop/java.applet.Applet.showStatus(Applet.java:269)
+	at org.polytechtours.javaperformance.tp.paintingants.PaintingAnts.stop(PaintingAnts.java:543)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_stop_jmhTest.stop_thrpt_jmhStub(PaintingAnts_stop_jmhTest.java:119)
+	at org.polytechtours.javaperformance.tp.paintingants.jmh_generated.PaintingAnts_stop_jmhTest.stop_Throughput(PaintingAnts_stop_jmhTest.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+
+
+
+
+# JMH version: 1.26
+# VM version: JDK 14.0.1, Java HotSpot(TM) 64-Bit Server VM, 14.0.1+7
+# VM invoker: C:\Program Files\Java\jdk-14.0.1\bin\java.exe
+# VM options: -javaagent:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\lib\idea_rt.jar=57727:D:\download\IntelliJIDEA\install\IntelliJ IDEA 2020.1.1\bin -Dfile.encoding=UTF-8
+# Warmup: 3 iterations, 10 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.polytechtours.javaperformance.tp.paintingants.CColonie.run
+
+# Run progress: 57,14% complete, ETA 00:00:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 
